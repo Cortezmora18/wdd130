@@ -7,18 +7,15 @@
 nav{
     background-color: #7FD3FF;
 }
-/*#logo_link {
-    background-color: #7FD3FF;
-}  WHY IT DOESN[T WORK??????????*/
 nav a {
     text-align: center;
-    color:#09549F;
+    color: white;
     text-decoration: none;
     padding: 35px;
 }
 nav a:hover {
-    background-color: #7FD3FF;
-    color: white;
+    background-color: white;
+    color: #09549F;
 }
 #hero-msg h1{
     text-align: center;
@@ -63,14 +60,6 @@ header {
     background-color: white;
     color: #09549F;
 }
-.msg {
-    background-color: #7FD3FF;
-    font-family: "shantell sans, permanent market, san serif";
-    padding: 35px;
-}
-/*footer {
-    background-color: #7FD3FF;
-}*/
 .home-title {
     color: #7FD3FF;
     font-family: "shantell sans, permanent market, sans serif";
@@ -83,6 +72,11 @@ h2 {
 h4 {
     color: #7FD3FF;
 }
+.msg {
+    background-color: #7FD3FF;
+    font-family: "shantell sans, permanent market, san serif";
+    padding: 35px;
+}
 .msg h2 {
     color: white;
 }
@@ -93,6 +87,7 @@ h4 {
     padding-bottom: 15px;
 }
 footer {
+    background-color: #7FD3FF;
     color: white;
     padding: 25px 50px;
     margin-top: 200px;
@@ -104,7 +99,7 @@ footer a {
 footer p {
     font-size: 1.2em;
 }
-footer a:hover {
+footer p a:hover {
     color: #09549F;
     text-decoration: underline;
 }
@@ -117,8 +112,9 @@ footer, .social img {
 }
 .logo {
     width: 80px;
-    }
+}
 #logo_link{
+    /*background-color: #7FD3FF;*/
     padding-top: 5px;
 }
 .rivers-card, .camping-card, .rapids-card {
