@@ -13,9 +13,11 @@ header{
 
 }
 nav{
-    background-color: #7FD3FF;
+    background-color: #09549F;
     display: flex;
     justify-content: space-around;
+    opacity: .6;
+    transform: scale(1.1);
 }
 nav a {
     text-align: center;
