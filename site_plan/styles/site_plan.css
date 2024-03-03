@@ -6,8 +6,8 @@ Fonts are separated by a | */
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #d8aa3c   ;
-  --secondary-color: #814b14 ;
-  --accent1-color: #5d3d00;
+  --secondary-color: #7d4f50 ;
+  --accent1-color: #cc8b86;
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
@@ -15,15 +15,15 @@ Fonts are separated by a | */
   --paragraph-font: Roboto Flex, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #5d3d00;  /* headlines on a white background */ 
+  --headline-color-on-white: #7d4f50;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #5d3d00; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #cc8b86; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #5d3d00  ;
-  --nav-link-color: #5d3d00;
+  --paragraph-background-color: #cc8b86  ;
+  --nav-link-color: #7d4f50;
   --nav-background-color: #d8aa3c;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #5d3d00;
+  --nav-hover-background-color: #cc8b86;
 }
 
 
