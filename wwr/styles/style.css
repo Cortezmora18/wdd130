@@ -134,6 +134,7 @@ input {
     background-color: #7FD3FF;
     font-size: 1em;
     font-family: "shantell sans, permanent market, san serif";
+    border-style: none;
 }
 .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -158,9 +159,12 @@ h4 {
     color: #7FD3FF;
 }
 .faq {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 50px 50px;
+    grid-gap: 20px;
 
 }
 .msg {
