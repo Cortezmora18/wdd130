@@ -135,7 +135,7 @@ input {
 .accordion{
     color: #FFFFFF;
     background-color: #7FD3FF;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "shantell sans, permanent market, san serif";
 }
 .accordion:after {
@@ -152,7 +152,7 @@ input {
 h3{
     color: #FFFFFF;
     font-family: "shantell sans, permanent market, sans serif";
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: 10px; 
 }
 h4 {
