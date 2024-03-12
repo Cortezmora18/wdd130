@@ -129,13 +129,13 @@ input {
 }
 .panel{
     color: #09549F;
-    font-size: 1.5em;
+    font-size: 1em;
    
 }
 .accordion{
     color: #FFFFFF;
     background-color: #7FD3FF;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: "shantell sans, permanent market, san serif";
 }
 .accordion:after {
