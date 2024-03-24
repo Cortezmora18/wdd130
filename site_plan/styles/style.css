@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header{
+  display: grid;
+  grid-template-columns: 150px auto;
+  
+
+}
+nav{
+  background-color: #cc8b86;
+  display: flex;
+  justify-content: space-around;
+  opacity: .6;
+  transform: scale(1.1);
+}
+nav a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 35px;
+}
+nav a:hover {
+  background-color: white;
+  color: #7d4f50;
+}
+#logo_link{
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+.logo {
+  width: 150px;
+}
+
+footer {
+  background-color: #cc8b86;
+  color: white;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer p {
+  font-size: 1.2em;
+}
+footer p a:hover {
+  color: #7d4f50;
+  text-decoration: underline;
+}
+footer, .social img {
+  padding-top: 25px;
+}
+
+
+
+
 form {
     /* Center the form on the page */
     margin: 0 auto;
