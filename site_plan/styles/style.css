@@ -35,7 +35,50 @@ nav a:hover {
 .logo {
   width: 150px;
 }
+.content {
+  display: inline-block;
+}
+  
 
+.book_covers {
+  float: right;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Roboto Condensed, Sans Serif";
+  color: #814B14;
+}
+p {
+  font-family: "Roboto Flex, Open Sans";
+  color: #cc8b86;
+}
+button {
+  font-size: 25px;
+  background-color: #cc8b86 ;
+  color: white;
+  border: none;
+}
+.right-img {
+  float: right;
+  margin: 0 auto;
+}
+.left-img{
+  float: left;
+}
+.right {
+  display: inline-block;
+  margin: 10px;
+  padding: 150px;
+  font-size: 25px;
+  position: relative;
+}
+.left {
+  display: inline-block;
+  margin: 10px;
+  padding: 150px;
+  font-size: 25px;
+  
+}
 footer {
   background-color: #cc8b86;
   color: white;
@@ -51,6 +94,7 @@ footer a {
 }
 footer p {
   font-size: 1.2em;
+  color: white;
 }
 footer p a:hover {
   color: #7d4f50;

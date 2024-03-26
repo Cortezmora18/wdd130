@@ -1,0 +1,39 @@
+section {
+    width: 30%;
+    border: 1px solid;
+    
+  }
+  .content {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  .block1 {
+    margin-left: 5%;
+  }
+  .block2 {
+    margin-left:20%;
+  }
+  .block3 {
+    margin-left: 35%;
+  }
+  .block4 {
+    margin-left: 25%;
+  }
+  p:nth-of-type(2){
+    text-align: center;
+  }
+  p:nth-of-type(3){
+    text-align: right;
+  }
+  
+  .block4 p:nth-of-type(1) {
+   text-align: right;
+  }
+  .block4 p:nth-of-type(3) {
+   text-align: left;
+  }
+  .block4 p:nth-of-type(4) {
+   text-align: left;
+  }
+  
