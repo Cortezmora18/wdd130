@@ -20,31 +20,144 @@
             </nav>
         </header> 
         <main class="">
-            <section class="port-cards">
-                <img class="cards" src="images/BookCovers.PNG" alt="Book Covers">
-                <h2>Book Covers</h2>
-             </section>
-             <section class="port-cards">
-                <img class="cards" src="images/BookletGift.PNG" alt="Booklet Gift">
-                <h2>Booklet</h2>
-             </section>
-             <section class="port-cards">
-                <img class="cards" src="images/Invitations" alt="Invitation Conference District">
-                <h2>Invitations</h2>
-             </section>
-             <section class="port-cards">
-                <img class="cards" src="images/FunnyBakeLogo.jpg" alt="funny bake logo">
-                <h2>Logos</h2>
-             </section>
-             <section class="port-cards">
-                <img class="cards" src="images/MiniSite1.PNG" alt="mini site">
-                <h2>Mini Site</h2>
-             </section>
-             <section class="port-cards">
-                <img class="cards" src="images/Nakbe_spa1.jpg" alt="website">
-                <h2>Website</h2>
-             </section>
-           
+            <h2>PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Websites</button>
+  <button class="btn" onclick="filterSelection('cars')"> Media</button>
+  <button class="btn" onclick="filterSelection('people')"> Books</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column people">
+    <div class="content">
+      <img src="images/BookCovers.PNG" alt="Book Covers" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Book Covers</h4></a>
+      
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="images/FunnyBake7.PNG" alt="funny bake logo" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Funny Bake Logo</h4></a>
+      
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="images/TarjetaPreentacion.PNG" alt="Presentation Card" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Presentation Card</h4></a>
+      
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="images/BookletGift.PNG" alt="Booklet Gift" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Booklet</h4></a>
+     
+    </div>
+  </div>
+   
+  <div class="column nature">
+    <div class="content">
+      <img src="images/MiniSite3.PNG" alt="mini site" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Mini Site</h4></a>
+      
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <img src="images/Nakbe_spa3.jpg" alt="website" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Website</h4></a>
+     
+    </div>
+  </div>
+
+ 
+  <div class="column cars">
+    <div class="content">
+      <img src="images/campaign3.PNG" alt="Water scarcity Campaign" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Water Scarcity Campaign</h4></a>
+    
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="images/Invitation3.PNG" alt="Invitation" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Conference Invitation </h4></a>
+      
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="images/SocialMedia2.jpg" alt="Social Media Post" style="width:100%">
+      <a href="/site_plan/default.html" target="_blank"><h4>Social Media Post</h4></a>
+      
+    </div>
+  </div>
+  
+<!-- END GRID -->
+<script>
+    filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</div>
+    
+
+
         </main>   
         <footer>
             <p>CORALES DESIGN &copy; 2024 </p>
